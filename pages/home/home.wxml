@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<!--用于页面布局--->
+<text class='title'>Hello World</text>
+<button>按钮</button>
