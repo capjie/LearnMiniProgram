@@ -1,0 +1,17 @@
+<!--pages/branch1/branch1.wxml-->
+<text>我是上传页面</text>
+
+<view>{{message}}</view>
+<button size="mini" bindtap="handleBtnClick">按钮</button>
+
+<button size="mini" 
+        open-type="getUserInfo" 
+        bindgetuserinfo="handleGetUserInfo">
+    获取授权
+</button><!--获取用户授权-->
+
+<!--3.展示用户信息-->
+<open-data type='userNickName'></open-data>
+<open-data type='userAvatarUrl' size='mini'></open-data>
+
+<view bindtap='handleViewClick'>handleViewClick</view>

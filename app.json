@@ -1,6 +1,32 @@
 {
   "pages": [
-    "pages/home/home"
+    "pages/home/home",
+    "pages/branch1/branch1"
   ],
-  "sitemapLocation": "sitemap51.json"
+  "window": {
+    "navigationBarBackgroundColor": "#ff5577",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小胖的小程序",
+    "backgroundColor": "black",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "pages/tabBar/首页.png",
+        "selectedIconPath": "pages/tabBar/首页.png"
+      },
+      {
+        "pagePath": "pages/branch1/branch1",
+        "text": "上传",
+        "iconPath": "pages/tabBar/upload.png",
+        "selectedIconPath": "pages/tabBar/upload.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap28.json"
 }

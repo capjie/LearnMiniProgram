@@ -1,7 +1,15 @@
 <!--pages/home/home.wxml-->
 <!--用于页面布局--->
-<text class='title'>Hello World</text>
-<button>按钮</button>
-<view>1.知识点1</view>
-<view>你好</view>
+<!--小程序的数据绑定: {{}} -> Mustache语法（双大括号语法）-->
+<view>Hello {{name}}</view>
+<view>{{name}}的年龄: {{age}}</view>
+<!--这样的话就不会发view写死-->
 
+<!--2.列表展示: wx:for （for循环）-->
+<view wx:for = "{{students}}" wx:key="key">{{item.name}}-{{item.age}}</view>
+<!--如何students不加两个大括号那么item便会吧students当成字符串遍历-->
+
+<!--3.事件监听改变data-->
+<view>当前计数:{{counter}}</view>
+<button size="mini" bindtap="handleBtnClick">+</button>
+<button size="mini" bindtap="handleSubtraction">-</button>

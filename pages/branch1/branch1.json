@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "上传界面",
+  "navigationBarBackgroundColor": "#000000",
+  "enablePullDownRefresh": true
+}

@@ -1,66 +1,27 @@
-// pages/home/home.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  data:{
+    name: 'Capjie',//这些的数据可以来自服务器
+    age : 18,
+    students: [
+      { id: 110, name: 'capjie', age: 15 },
+      { id: 111, name: 'cap2', age: 16 },
+      { id: 112, name: 'cap3', age: 17 },
+      { id: 113, name: 'cap4', age: 18 },
+      { id: 114, name: 'cap6', age: 19 }
+    ],
+    counter:0
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleBtnClick(){
+    console.log("加号按钮被点击了");
+    //this.setData()可以改变目标的值，并且能够在页面上显示
+    this.setData({
+      counter:this.data.counter + 1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  handleSubtraction(){
+    console.log("减号按钮被点击了");
+    this.setData({
+      counter : this.data.counter - 1
+    })
   }
 })
