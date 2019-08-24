@@ -1,0 +1,4 @@
+/* pages/button/button.wxss 写样式*/
+.pressed{
+  background: red;
+}
